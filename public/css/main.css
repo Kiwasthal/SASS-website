@@ -1,5 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #272727;
   color: #fff;
-  font-weight: 700;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+.main-paragraph {
+  font-weight: 400;
+}
+.main-paragraph:hover {
+  color: pink;
 }/*# sourceMappingURL=main.css.map */
