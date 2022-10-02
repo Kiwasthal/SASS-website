@@ -4,18 +4,29 @@
   padding: 0;
 }
 
-body {
+.app {
   background: #272727;
   color: #fff;
+  height: 100vh;
+  width: 100vw;
 }
 
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   width: 80%;
   margin: 0 auto;
 }
 .main-paragraph {
-  font-weight: 400;
+  font-weight: 700;
 }
 .main-paragraph:hover {
   color: pink;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */

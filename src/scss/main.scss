@@ -4,20 +4,51 @@
   @return map-get($fontWeights, $weightName);
 }
 
-body {
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin theme($lightTheme: true) {
+  @if $lightTheme {
+    background-color: lighten($primaryColor, 100%);
+    color: darken($textColor, 100%);
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+.app {
   background: $primaryColor;
   color: $textColor;
+  height: 100vh;
+  width: 100vw;
 }
 
 .main {
+  @include flexCenter(row);
   width: 80%;
   margin: 0 auto;
 
   &-paragraph {
-    font-weight: weight(regular);
+    font-weight: weight(bold);
 
     &:hover {
       color: pink;
     }
   }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.light {
+  @include theme($lightTheme: false);
 }
