@@ -12,10 +12,10 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/projects" element={<Project />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/SASS-website" element={<Home />}></Route>
+        <Route path="/SASS-website/about" element={<About />}></Route>
+        <Route path="/SASS-website/projects" element={<Project />}></Route>
+        <Route path="/SASS-website/contact" element={<Contact />}></Route>
       </Routes>
     </>
   );

@@ -22,7 +22,7 @@ const Header = () => {
         <ul className={`menu-nav ${burgerClass}`}>
           <li className={`menu-nav-item ${burgerClass}`}>
             <Link
-              to="/"
+              to="/SASS-website"
               className={
                 location.pathname === '/'
                   ? `menu-nav-link active ${burgerClass}`
@@ -34,7 +34,7 @@ const Header = () => {
           </li>
           <li className={`menu-nav-item ${burgerClass}`}>
             <Link
-              to="/about"
+              to="/SASS-website/about"
               className={
                 location.pathname === '/about'
                   ? `menu-nav-link active ${burgerClass}`
@@ -46,7 +46,7 @@ const Header = () => {
           </li>
           <li className={`menu-nav-item ${burgerClass}`}>
             <Link
-              to="/projects"
+              to="/SASS-website/projects"
               className={
                 location.pathname === '/projects'
                   ? `menu-nav-link active ${burgerClass}`
@@ -58,7 +58,7 @@ const Header = () => {
           </li>
           <li className={`menu-nav-item ${burgerClass}`}>
             <Link
-              to="/contact"
+              to="/SASS-website/contact"
               className={
                 location.pathname === '/contact'
                   ? `menu-nav-link active ${burgerClass}`
