@@ -2,11 +2,15 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 
 const Header = () => {
-  const [burgerClass, setBurgerClass] = useState('');
+  const [burgerClass, setBurgerClass] = useState(null);
   const location = useLocation();
 
   const handleBuger = () =>
     burgerClass === '' ? setBurgerClass('open') : setBurgerClass('');
+
+  useEffect(() => {
+    handleBuger();
+  }, [location]);
 
   return (
     <header>

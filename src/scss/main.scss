@@ -1,4 +1,23 @@
-@import 'config', 'home', 'menu';
+@import 'config', 'home', 'about', 'projects', 'menu', 'contact';
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 body {
   background-color: $primaryColor;
@@ -7,6 +26,7 @@ body {
   width: 100vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+  overflow-x: hidden;
 }
 
 h1,
@@ -45,6 +65,10 @@ main {
       }
     }
   }
+}
+
+.text-secondary {
+  color: $secondaryColor;
 }
 
 footer {

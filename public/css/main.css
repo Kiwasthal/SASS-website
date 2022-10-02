@@ -32,7 +32,135 @@
   .main {
     flex-direction: column;
   }
-}/*# sourceMappingURL=main.css.map */;
+}/*# sourceMappingURL=main.css.map */ hidden;
+}
+.about-bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../assets/model-1.jpg") center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about-bio-image p {
+  margin-bottom: 2rem;
+}
+.about-bio {
+  width: 80%;
+  text-align: center;
+}
+.about-bio .text-secondray {
+  padding-bottom: 1rem;
+}
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs-job {
+  background: #414141;
+  padding: 0.5rem 0 0.5rem 0;
+  border-bottom: 5px solid #e11d48;
+}
+.about .jobs-job h2,
+.about .jobs-job h3 {
+  margin: 0.5rem 0;
+}
+.about .jobs-job h6 {
+  margin: 0.3rem 0;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.projects {
+  padding-bottom: 2rem;
+  overflow-x: hidden;
+}
+.projects-bio-image {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../assets/model-1.jpg") center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projects-bio-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.projects-items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.projects-item {
+  position: relative;
+  border-bottom: 5px solid #e11d48;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects-item img {
+  width: 100%;
+}
+.projects-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #e11d48;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.projects-item:hover::after {
+  top: 0;
+  opacity: 0.8;
+}
+.projects-item:hover .projects-btns-btn {
+  opacity: 1;
+}
+.projects-btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+.projects-btns-btn {
+  opacity: 0;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.projects-btns-btn:hover {
+  color: #fff;
+}
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.projects footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
   right: 1rem;
   top: 1rem;
   height: 20px;
@@ -149,6 +277,50 @@
   transition-delay: 0.55s;
 }
 
+.contact {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../assets/model-1.jpg") center;
+  background-size: cover;
+}
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+.contact .social-icons {
+  position: initial;
+  margin-top: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   background-color: #272727;
   color: #fff;
@@ -156,6 +328,7 @@ body {
   width: 100vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+  overflow-x: hidden;
 }
 
 h1,
@@ -190,6 +363,10 @@ main .social-icons a {
   transition: all 0.5s ease-in-out;
 }
 main .social-icons a:hover {
+  color: #e11d48;
+}
+
+.text-secondary {
   color: #e11d48;
 }
 
