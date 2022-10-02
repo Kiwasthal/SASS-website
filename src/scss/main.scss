@@ -1,0 +1,14 @@
+$primaryColor: #272727;
+$accentColor: #ff652f;
+$textColor: #fff;
+$fontWeights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+);
+
+body {
+  background: $primaryColor;
+  color: $textColor;
+  font-weight: map-get($fontWeights, bold);
+}

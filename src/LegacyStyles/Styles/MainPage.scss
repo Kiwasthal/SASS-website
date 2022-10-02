@@ -1,4 +1,4 @@
-@import '../Variables/Variables.sass';
+@import '../Variables/Variables.scss';
 
 .mainPage {
   display: flex;
@@ -7,5 +7,9 @@
 
   h1 {
     color: $redColor;
+  }
+
+  button {
+    @include buttonStyle(black, 35px);
   }
 }

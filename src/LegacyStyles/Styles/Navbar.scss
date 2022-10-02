@@ -1,4 +1,4 @@
-@import '../Variables/Variables.sass';
+@import '../Variables/Variables.scss';
 
 body {
   margin: 0;
@@ -24,4 +24,8 @@ body {
   text-decoration: none;
   font-family: $titleFont;
   margin: 10px;
+}
+
+button {
+  @include buttonStyle(red, 23);
 }
