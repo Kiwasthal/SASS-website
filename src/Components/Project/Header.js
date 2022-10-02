@@ -22,7 +22,7 @@ const Header = () => {
         <ul className={`menu-nav ${burgerClass}`}>
           <li className={`menu-nav-item ${burgerClass}`}>
             <Link
-              to="/SASS-website"
+              to="/SASS-website/"
               className={
                 location.pathname === '/'
                   ? `menu-nav-link active ${burgerClass}`

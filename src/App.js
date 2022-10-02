@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/SASS-website" element={<Home />}></Route>
+        <Route path="/SASS-website/" element={<Home />}></Route>
         <Route path="/SASS-website/about" element={<About />}></Route>
         <Route path="/SASS-website/projects" element={<Project />}></Route>
         <Route path="/SASS-website/contact" element={<Contact />}></Route>
