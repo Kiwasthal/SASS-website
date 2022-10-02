@@ -1,0 +1,11 @@
+@import '../Variables/Variables.sass';
+
+.mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $redColor;
+  }
+}
